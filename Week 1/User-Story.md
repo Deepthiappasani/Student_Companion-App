@@ -1,0 +1,17 @@
+## User Story for Student Companion Application: 
+- User should be able to login with verified credentials to the application for the sake of authenticity. 
+- User should be able to schedule an event in calendar
+- User should be able to edit the events 
+- User should be able to delete an event in the calendar 
+- User should be able to view the day plan 
+- User should be able to add an activity 
+- User should be able to edit an activity 
+- User should be able to delete an activity in day plan. 
+- User should be able to store details of learning resources
+- User should be able to view learning resources in a particular subject
+- User should be able to add a new subject
+- User should be able to edit a subject
+- User should be able to delete a subject 
+- User should be able to add a learning resource details
+- User should be able to edit learning resource details
+- User should be able to delete a particular learning resource detail
