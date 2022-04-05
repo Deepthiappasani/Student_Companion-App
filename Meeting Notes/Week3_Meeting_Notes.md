@@ -1,4 +1,6 @@
 Week 3 Meeting  Notes:
+
+
 Weekly Meet: 1
 Meeting Agenda: To implement Class Diagram and User Story.
 Date - 21:03:2022
