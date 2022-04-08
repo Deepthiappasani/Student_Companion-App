@@ -7,7 +7,7 @@ create table EventDetails(
 	EventID SERIAL,
 	EventTitle varchar(50),
 	EventDate Date,
-	EventDescription varchar(250),
+	EventDescription varchar(300),
 	PRIMARY KEY(EventID)
 );
 create table ActivityDetails(
@@ -16,7 +16,7 @@ create table ActivityDetails(
 	DateOfCompletion Date,
 	StartTime Time,
 	EndTime Time,
-	ActivityDescription varchar(250),
+	ActivityDescription varchar(300),
 	PRIMARY KEY(ActivityID)
 );
 create table Subject_Topic(
@@ -29,7 +29,7 @@ create table LearningResourceDetails(
 	ID int,
 	Title varchar(150),
 	Topic varchar(50),
-	Description varchar(250),
+	Description varchar(300),
 	PRIMARY KEY(ID),
 	FOREIGN KEY (Topic) REFERENCES Subject_Topic(Topic)
 );
@@ -42,6 +42,6 @@ create table LearningResourceURL(
 
 create table Subject(
 	SubjectID SERIAL,
-	SubjectName varchar(50),
+	SubjectName varchar(35),
 	PRIMARY KEY(SubjectID)
 )
