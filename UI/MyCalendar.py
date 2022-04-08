@@ -13,11 +13,11 @@ class MyCalendar:
         
         self.heading = ttk.Label(root,text = "My Calendar")
         self.heading.grid(row = 0,column = 3)
-        self.prevbutton = ttk.Button(root,text = "Prev",command = self.prevMonth)
+        self.prevbutton = ttk.Button(root,text = "<",command = self.prevMonth)
         self.prevbutton.grid(row = 1,column = 2)
         self.heading2 = ttk.Label(root,text=f"{calendar.month_name[self.monthVar]} {self.yearVar}")
         self.heading2.grid(row = 1,column = 3)
-        self.nextbutton = ttk.Button(root,text="Next",command=self.nextMonth)
+        self.nextbutton = ttk.Button(root,text=">",command=self.nextMonth)
         self.nextbutton.grid(row = 1,column = 4)
         
         ttk.Button(root,text="Mon",state = DISABLED).grid(row = 2,column = 0)
