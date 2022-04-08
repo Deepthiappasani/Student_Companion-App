@@ -1,5 +1,5 @@
 Week 3 Meeting  Notes:
-
+Meeting Agenda: To start with coding for the application in python with tkinter.
 
 Weekly Meet: 1
 Meeting Agenda: To implement Class Diagram and User Story.
