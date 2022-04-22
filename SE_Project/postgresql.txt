@@ -1,0 +1,47 @@
+create table UserDetails(
+	Username varchar(50),
+	Name varchar(50),
+	Password varchar not null,
+	PRIMARY KEY (Username)
+);
+create table EventDetails(
+	EventID SERIAL,
+	EventDate Date,
+	EventTime Time,
+	PRIMARY KEY(EventID)
+);
+create table ActivityDetails(
+	ActivityID SERIAL,
+	ActivityTitle varchar(50),
+	DateOfCompletion Date,
+	StartTime Time,
+	EndTime Time,
+	ActivityDescription varchar(250),
+	PRIMARY KEY(ActivityID)
+);
+create table Subject_Topic(
+	Topic varchar(50),
+	Subject varchar(50),
+	PRIMARY KEY(Topic)
+);
+
+create table LearningResourceDetails(
+	ID int,
+	Title varchar(150),
+	Topic varchar(50),
+	Description varchar(250),
+	PRIMARY KEY(ID),
+	FOREIGN KEY (Topic) REFERENCES Subject_Topic(Topic)
+);
+create table LearningResourceURL(
+	URL varchar (500),
+	LearningResourceID int,
+	PRIMARY KEY(URL),
+	FOREIGN KEY(LearningResourceID) REFERENCES LearningResourceDetails(ID)
+);
+
+create table Subject(
+	SubjectID SERIAL,
+	SubjectName varchar(50),
+	PRIMARY KEY(SubjectID)
+)
